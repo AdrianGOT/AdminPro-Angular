@@ -1,7 +1,15 @@
-<canvas baseChart
-        [labels]="doughnutChartLabels"
-        [datasets]="doughnutChartDatasets"
-        [options]="doughnutChartOptions"
-        [legend]="true"
-        [type]="'doughnut'">
-</canvas>
+<div class="card">
+  <div class="card-body">
+
+    <h4>{{ title }}</h4>
+
+    <canvas baseChart
+            [labels]="doughnutChartLabels"
+            [datasets]="doughnutChartDatasets"
+            [options]="doughnutChartOptions"
+            [legend]="true"
+            [type]="'doughnut'">
+    </canvas>
+
+  </div>
+</div>
