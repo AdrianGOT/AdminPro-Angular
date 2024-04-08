@@ -13,6 +13,7 @@ import { GraphOneComponent } from './graph-one/graph-one.component';
 import { PagesComponent } from './pages.component';
 import { ProgressComponent } from './progress/progress.component';
 import { FormsModule } from '@angular/forms';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { FormsModule } from '@angular/forms';
     ProgressComponent,
     GraphOneComponent,
     PagesComponent,
+    AccountSettingsComponent,
   ],
   imports: [
     CommonModule,
@@ -34,6 +36,7 @@ import { FormsModule } from '@angular/forms';
     ProgressComponent,
     GraphOneComponent,
     PagesComponent,
+    AccountSettingsComponent,
   ]
 })
 export class PagesModule { }
