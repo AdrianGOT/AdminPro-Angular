@@ -33,8 +33,8 @@ export class SettingsService {
     this.themeLink?.setAttribute('href', themeColor);
   }
 
-  private checkCurrentTheme(): void{
-    if(!this.links ) this.links = document.querySelectorAll('.selector');
+  checkCurrentTheme(): void{
+    if(!this.links || this.links.length === 0) this.links = document.querySelectorAll('.selector');
 
     this.links?.forEach(elem =>  {
       if(elem.classList.contains(this.themeColorSelected + '-theme')) elem.classList.add('working');

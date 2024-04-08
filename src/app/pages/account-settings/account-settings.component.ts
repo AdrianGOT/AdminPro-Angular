@@ -6,7 +6,7 @@ import { SettingsService } from '../../services/settings.service';
   templateUrl: './account-settings.component.html',
   styles: ``
 })
-export class AccountSettingsComponent  {
+export class AccountSettingsComponent implements OnInit{
 
   constructor(
     private settingsServices: SettingsService
@@ -20,6 +20,10 @@ export class AccountSettingsComponent  {
     'purple',
     'megna'
   ];
+
+  ngOnInit(): void {
+  }
+
 
   changeTheme(themeColor: string, isDarkMode: boolean = false){
     this.settingsServices.changeTheme(themeColor, isDarkMode);
