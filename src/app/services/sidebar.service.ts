@@ -23,6 +23,8 @@ export class SidebarService {
         { title: 'Dashboard', path: '/' },
         { title: 'Progressbar', path: 'progress' },
         { title: 'grahps', path: 'graph-one' },
+        { title: 'Promises', path: 'promises' },
+        { title: 'RXJS', path: 'rxjs' },
       ]
 
     }
