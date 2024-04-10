@@ -12,7 +12,7 @@ export class SidebarService {
     { text: 'My Balance', path: '' },
     { text: 'Inbox',  path: '' },
     { text: 'Account Setting',  path: 'account-settings' },
-    { text: 'Logout',  path: '' },
+    { text: 'Logout',  path: '/login' },
   ]
 
   menuItems = [
