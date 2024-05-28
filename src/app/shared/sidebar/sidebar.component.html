@@ -22,7 +22,7 @@
                           <span class="hide-menu">{{item.title}}
                             <span class="label label-rouded label-themecolor pull-right">{{ item.subMenu.length }}</span>
                           </span>
-                        </a>
+                        </a>  
                           <ul aria-expanded="false" class="collapse">
                               <li *ngFor="let subItem of item.subMenu">
                                 <a [routerLink]="subItem.path"

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -12,7 +12,10 @@ export class LoginComponent {
     private router: Router
   ){}
 
+  OnInit(){
+    console.log('lalo');
 
+  }
   login = () => this.router.navigateByUrl('/');
 
 
