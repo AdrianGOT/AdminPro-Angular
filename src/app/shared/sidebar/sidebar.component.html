@@ -10,7 +10,21 @@
                       <li class="user-profile">
                           <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><img src="../assets/images/users/profile.png" alt="user" /><span class="hide-menu">Steave Jobs </span></a>
                           <ul aria-expanded="false" class="collapse">
-                              <li *ngFor="let item of profileOptions" ><a [routerLink]="item.path" routerLinkActive="router-link-active" > {{item.text}} </a>  </li>
+                              <li *ngFor="let item of profileOptions" >
+                                <a
+                                  [routerLink]="item.path"
+                                  *ngIf="item.text !== 'Logout'"
+                                  routerLinkActive="router-link-active" >
+                                    {{item.text}}
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                routerLinkActive="router-link-active"
+                                (click)="logout()">
+                                  Logout
+                              </a>
+                              </li>
                           </ul>
                       </li>
                       <li class="nav-devider"></li>
@@ -22,7 +36,7 @@
                           <span class="hide-menu">{{item.title}}
                             <span class="label label-rouded label-themecolor pull-right">{{ item.subMenu.length }}</span>
                           </span>
-                        </a>  
+                        </a>
                           <ul aria-expanded="false" class="collapse">
                               <li *ngFor="let subItem of item.subMenu">
                                 <a [routerLink]="subItem.path"

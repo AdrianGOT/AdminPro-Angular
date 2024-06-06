@@ -6,6 +6,6 @@
   animation-fill-mode:both
 }
 
-#themecolors > li:hover{
+#themecolors > li:hover, .cursor{
   cursor: pointer;
 }

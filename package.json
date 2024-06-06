@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "serve dist -s -n",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
@@ -21,6 +21,7 @@
     "chart.js": "^4.4.2",
     "ng2-charts": "^5.0.4",
     "rxjs": "~7.8.0",
+    "serve": "^14.2.3",
     "sweetalert2": "^11.11.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"

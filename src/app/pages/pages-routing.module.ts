@@ -7,12 +7,14 @@ import { ProgressComponent } from './progress/progress.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromisesComponent } from './promises/promises.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { authGuard } from '../guard/auth.guard';
 
 
 const routes: Routes = [
  {
   path: 'dashboard',
   component: PagesComponent,
+  canActivate: [authGuard],
   children: [
     {path: '', component: DashboardComponent, data: {title: 'Dashboard'}},
     {path: 'account-settings', component: AccountSettingsComponent, data: {title: 'Account Settings'}},

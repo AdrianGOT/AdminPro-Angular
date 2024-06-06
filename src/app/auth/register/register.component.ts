@@ -35,8 +35,7 @@ export class RegisterComponent {
     if(this.registerForm.invalid) return;
 
     this.userService.createUser(this.registerForm.value).subscribe(res => {
-      console.log('user created');
-      console.log(res);
+
     }, err => {
       const errorText = err.error.msg;
 

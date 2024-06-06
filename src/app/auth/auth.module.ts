@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 // Components
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { DirectiveModule } from '../directive/directive.module';
 
 
 
@@ -21,7 +22,8 @@ import { RegisterComponent } from './register/register.component';
     RouterModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    DirectiveModule
   ]
 })
 export class AuthModule { }

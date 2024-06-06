@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SidebarService } from '../../services/sidebar.service';
+import { UserService } from '../../services/user.service';
 
 interface SideBarOptions {
   text: string,
@@ -17,11 +18,16 @@ export class SidebarComponent {
   menuItems: any[] = [];
 
   constructor(
-    private sidebarService: SidebarService
+    private sidebarService: SidebarService,
+    private userService: UserService
   ){
     this.profileOptions = this.sidebarService.profileOptions;
     this.menuItems = this.sidebarService.menuItems;
   }
 
+
+  logout(){
+    this.userService.logoutUser();
+  }
 
 }
